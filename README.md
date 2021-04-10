@@ -12,7 +12,7 @@ This is a telegram bot to play the game [diplomacy](https://en.wikipedia.org/wik
 
 ## Disclaimer
 
-The code is all stored in the one file. This is not very pretty and it would be great, if I could change it one day :)
+The code is all stored in one file. This is not very pretty and it would be great, if I could change it one day :)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
