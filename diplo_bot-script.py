@@ -28,8 +28,10 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 ########################
 #api identification and url of the telegram bot
 
+telegram_bot_token = None
+IBM_auth_token = None
 
-bot_token = "" #the telegram api's unique key for diplo_tone_analyzer_bot
+bot_token = telegram_bot_token #the telegram api's unique key for diplo_tone_analyzer_bot
 bot_url = "https://api.telegram.org/bot{}/".format(bot_token) #the url that is used for communication with diplo_tone_analyzer_bot
 
 bot = telegram.Bot(token=bot_token)
@@ -37,7 +39,7 @@ bot = telegram.Bot(token=bot_token)
 ###########
 #api identification and url of the IBM tone analyzer
 
-authenticator = IAMAuthenticator("")
+authenticator = IAMAuthenticator(IBM_auth_token)
 toneAnalyzer = ToneAnalyzerV3(version="2017-09-21", authenticator=authenticator)
 toneAnalyzer.set_service_url("")
 
